@@ -43,7 +43,7 @@ C[C@H]1CN([C@@H](C)CO)C(=O)CCCn2cc(nn2)CO[C@@H]1CN(C)C(=O)CCC(F)(F)F
 ```
 from infoalign.representer import InfoAlignRepresenter
 
-# Load the pretrained model
+# Load the pretrained model. The model will be automatically downloaded to the specified path
 model = InfoAlignRepresenter(model_path='infoalign_model/pretrain.pt')
 
 # Predict representation for a single SMILES string (returns a NumPy array)
