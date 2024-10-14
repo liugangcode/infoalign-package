@@ -8,6 +8,11 @@ For related projects by the main ML researcher and developer, visit: [https://gi
 
 ## Installation
 
+
+```
+conda create --name infoalign python=3.11.7
+```
+
 Install the package via pip:
 
 ```
@@ -18,8 +23,8 @@ pip install infoalign
 
 ### Command Line Interface (CLI)
 ```
-infoalign_pred --input {path_to_input_smiles.csv} 
-               --output {path_to_output.npy} 
+infoalign_predict --input {path_to_input_smiles.csv} \
+               --output {path_to_output.npy} \
                --output-to-input-column  # This adds the representation to the input CSV as an additional column
 ```
 
