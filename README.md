@@ -32,12 +32,13 @@ infoalign_predict --input {path_to_input_smiles.csv} \
 ```
 from infoalign.representer import InfoAlignRepresenter
 
+# Load the pretrained model
 model = InfoAlignRepresenter(model_path='infoalign_model/pretrain.pt')
 
-# For a single SMILES string
+# Predict representation for a single SMILES string (returns a NumPy array)
 one_rep = model.predict('CCC')
 
-# For a list of SMILES strings
+# Predict representations for a list of SMILES strings
 two_reps = model.predict(['CCC', 'CCC'])
 ```
 
