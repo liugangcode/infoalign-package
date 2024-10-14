@@ -22,11 +22,22 @@ pip install infoalign
 ## Usage
 
 ### Command Line Interface (CLI)
-```
+
+```bash
 infoalign_predict --input {path_to_input_smiles.csv} \
-               --output {path_to_output.npy} \
-               --output-to-input-column  # This adds the representation to the input CSV as an additional column
+                  --output {path_to_output.npy} \
+                  --output-to-input-column  # Adds the representation as an additional column in the input CSV
 ```
+
+The input CSV file should look like this:
+
+```csv
+SMILES
+CNC[C@H]1OCc2cnnn2CCCC(=O)N([C@H](C)CO)C[C@@H]1C
+CNC[C@@H]1OCc2cnnn2CCCC(=O)N([C@H](C)CO)C[C@H]1C
+C[C@H]1CN([C@@H](C)CO)C(=O)CCCn2cc(nn2)CO[C@@H]1CN(C)C(=O)CCC(F)(F)F
+```
+
 
 ### Python API
 ```
